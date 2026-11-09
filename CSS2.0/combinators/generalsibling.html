@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            div{
+                  width: 200px;
+                  height: 200px;
+                  padding: 10px;
+                  border: 2px solid black;
+            }
+
+ /* genral sibling COmbinatore(~)  selects  the all matching sibling that apear after an element */
+          div ~ h1{
+                  color: red;
+            }
+    </style>
+</head>
+<body>
+    
+          <div>
+               <h3>nothing</h3>
+                <h1>welcome</h1>
+                <h2>Something</h2>
+                  <article>
+                       <h2>Nothing</h2>
+                  </article>
+                
+          </div>
+
+            <h1>outside the div...</h1>
+            <h3>nothing</h3>
+                <h1>welcome</h1>
+                <h2>Something</h2>
+
+
+            
+
+         
+</body>
+</html>

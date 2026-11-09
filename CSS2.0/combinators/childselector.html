@@ -1,0 +1,62 @@
+<!-- 
+ css combinatores are symbolls used to define the relationship bet HTML elements and apply style based on that elationstip
+
+ 1.descednat combinatore   (space)
+ 2.Child seletctore (>)
+ 3.Adjacent sibling selectore  (+)
+ 4. Genral sibling selectpre (~)
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            div{
+                  width: 200px;
+                  height: 200px;
+                  padding: 10px;
+                  border: 2px solid black;
+            }
+            /* child selectore = select only the direct child of an element */
+          div>h2{
+                  color: red;
+            }
+    </style>
+</head>
+<body>
+    
+          <div>
+               <h3>nothing</h3>
+                <h1>welcome</h1>
+                <h2>Something</h2>
+                  <article>
+                       <h2>Nothing</h2>
+                  </article>
+                <h2>sdfgh</h2>
+          </div>
+
+          <div>
+            <h3>nothing</h3>
+             <h1>welcome</h1>
+             <h2>Something</h2>
+             <h2>sdfgh</h2>
+       </div>
+
+       <div>
+        <h3>nothing</h3>
+         <h1>welcome</h1>
+         <h2>Something</h2>
+         <h2>sdfgh</h2>
+   </div>
+
+          <a href="">
+              <h2>welcome</h2>
+          </a>
+
+</body>
+</html>

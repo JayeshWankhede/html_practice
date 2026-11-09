@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+   /* 
+        selects elemts whose attributes value starts with specified text
+        */
+           a[href ^="https"]
+           {
+            color: green;
+           }
+
+               /* 
+        selects elemts whose attributes value end with specified text
+        */
+
+        a[href $="com"]
+           {
+               border: 2px solid black;
+               padding: 10px;
+           }
+
+           /* 
+              [attr*="value"]
+              select elemnets whose attribtes value contain the specified text anywhre
+           */
+
+           a[href *= "aa"]
+           {
+                background-color: aqua;
+            
+           }
+           /* 
+                  [attribute ~= "value"]
+                  select elemets whose attribute value contains comlete ,space -seprated word
+           */
+           div[class ~= "demo"]
+           {
+                 width: 200px;
+                 height: 200px;
+                 border: 2px solid black;
+           }
+    </style>
+</head>
+<body>
+    <a href="https://meet-attendance-tracker.aa.web.app/" target="">Hyperlink</a>
+  <br><br>
+  
+    <a href="www.aa.com" target="">Hyperlink</a>
+<br><br>
+
+<div class="firstdemo">
+    one
+</div>
+
+<div class="second demo">
+    two
+</div>
+</body>
+</html>
